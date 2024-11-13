@@ -1,0 +1,27 @@
+{
+  "header": {
+    "title": "Liam Nunes",
+    "subheader": "Photojournalist"
+  },
+  "gallery": {
+    "title": "Liam Nunes",
+    "tiles": [
+      {
+        "url": "./src/assets/img/first.jpg",
+        "title": "First Photo"
+      },
+      {
+        "url": "./src/assets/img/second.jpg",
+        "title": "Second Photo"
+      },
+      {
+        "url": "./src/assets/img/third.jpg",
+        "title": "Third Photo"
+      },
+      {
+        "url": "./src/assets/img/fourth.jpg",
+        "title": "Fourth Photo"
+      }
+    ]
+  }
+}
