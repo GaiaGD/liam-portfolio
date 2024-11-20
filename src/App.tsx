@@ -8,11 +8,11 @@ import About from './components/About/index.tsx'
 function App() {
 
   return (
-    <>
+    <div className='lg:mx-12'>
       <Header {...data.header} />
       <Gallery {...data.gallery} />
       <About {...data.about} />
-    </>
+    </div>
   )
 }
 

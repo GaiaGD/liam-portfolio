@@ -1,17 +1,15 @@
 import { IoMailOutline } from "react-icons/io5";
+import { AiOutlinePhone } from "react-icons/ai";
 
 export default function Header ( props: any) {
     const { title, subheader } = props
     return (
-        <div>
-            <h1 className="text-5xl font-bold text-center"> {title} </h1>
-            <h3 className="font-light text-center">{subheader}</h3>
-            <div className="flex items-center justify-center">
+        <div className="block lg:flex w-full justify-between items-end pt-12 ">
+            <h1 className="text-5xl font-bold w-96"> {title} </h1>
+            <h3 className="font-light lg:text-center">{subheader}</h3>
+            <div className="flex items-center lg:justify-end w-96 gap-6">
                 <IoMailOutline />
-                <p>Email</p>
-                <IoMailOutline />
-                <p>Mobile</p>
-                <IoMailOutline />
+                <AiOutlinePhone />
             </div>
         </div>
     )
