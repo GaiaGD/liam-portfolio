@@ -1,76 +1,37 @@
 {
   "header": {
     "title": "Liam Nunes",
-    "subheader": "Photojournalist",
+    "subheader": "Filmmaker & Journalist",
     "phone": "+413 658 7036",
     "email": "liam.nunes@aol.com"
   },
-  "gallery": {
-    "title": "Liam Nunes",
-    "pictures": [
-      {
-        "url": "/LiamNunes-Gallery-1.jpg",
-        "title": "First Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-2.jpg",
-        "title": "Second Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-3.jpg",
-        "title": "Third Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-4.jpg",
-        "title": "Fourth Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-5.jpg",
-        "title": "First Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-6.jpg",
-        "title": "Second Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-7.jpg",
-        "title": "Third Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-8.jpg",
-        "title": "Fourth Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-9.jpg",
-        "title": "First Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-10.jpg",
-        "title": "Second Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-12.jpg",
-        "title": "Third Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-13.jpg",
-        "title": "Fourth Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-14.jpg",
-        "title": "First Photo"
-      },
-      {
-        "url": "/LiamNunes-Gallery-15.jpg",
-        "title": "Second Photo"
-      }
-    ]
-  },
-  "about": {
-    "intro": "By Liam Nunes",
-    "img": {
-      "title": "Liam Nunes",
-      "url": "/LiamNunes-bio.jpg"
+  "work": [
+    {
+      "org": "SCÉALTA12PRODUCTIONS",
+      "channelUrl": "https://www.youtube.com/@SC%C3%89ALTA12PRODUCTIONS",
+      "videoEmbed": "https://www.youtube.com/embed/HbYv7LW31So?start=3",
+      "role": "Freelance Filmmaker, Journalist, Creator",
+      "location": "Various Locations",
+      "period": "August 2025 – Present",
+      "footerLink": { "url": "https://www.youtube.com/@SC%C3%89ALTA12PRODUCTIONS", "label": "Visit Channel" }
+    },
+    {
+      "org": "Thetinymic",
+      "channelUrl": "https://www.youtube.com/@TheTnyMic",
+      "videoEmbed": "https://www.youtube.com/embed/icxWccRl6Ww",
+      "role": "Director, Producer, Editor",
+      "location": "Cape Charles, Virginia",
+      "period": "January 2026 – Present",
+      "footerLink": { "url": "https://www.youtube.com/@TheTnyMic", "label": "Visit Channel" }
+    },
+    {
+      "org": "Virginia Department of Emergency Management",
+      "channelUrl": "https://vimeo.com/1126320361",
+      "videoEmbed": "https://player.vimeo.com/video/1126320361",
+      "role": "Brand and Multimedia / Public Information Intern",
+      "location": "Richmond, Virginia",
+      "period": "May 2025 – January 2026",
+      "footerLink": { "url": "https://www.communicatorawards.com/winners/winners-gallery/?event=1099&search=echoes&id=627498", "label": "Communicator Award of Excellence" }
     }
-  }
+  ]
 }
