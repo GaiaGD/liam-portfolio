@@ -12,7 +12,8 @@
       "videoEmbed": "https://www.youtube.com/embed/HbYv7LW31So?start=3",
       "role": "Freelance Filmmaker, Journalist, Creator",
       "location": "Various Locations",
-      "period": "August 2025 – Present"
+      "period": "August 2025 – Present",
+      "footerLink": { "url": "https://www.youtube.com/@SC%C3%89ALTA12PRODUCTIONS", "label": "Visit Channel" }
     },
     {
       "org": "Thetinymic",
@@ -20,7 +21,8 @@
       "videoEmbed": "https://www.youtube.com/embed/icxWccRl6Ww",
       "role": "Director, Producer, Editor",
       "location": "Cape Charles, Virginia",
-      "period": "January 2026 – Present"
+      "period": "January 2026 – Present",
+      "footerLink": { "url": "https://www.youtube.com/@TheTnyMic", "label": "Visit Channel" }
     },
     {
       "org": "Virginia Department of Emergency Management",
@@ -28,7 +30,8 @@
       "videoEmbed": "https://player.vimeo.com/video/1126320361",
       "role": "Brand and Multimedia / Public Information Intern",
       "location": "Richmond, Virginia",
-      "period": "May 2025 – January 2026"
+      "period": "May 2025 – January 2026",
+      "footerLink": { "url": "https://www.communicatorawards.com/winners/winners-gallery/?event=1099&search=echoes&id=627498", "label": "Communicator Award of Excellence" }
     }
   ]
 }
