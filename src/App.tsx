@@ -8,7 +8,7 @@ import About from './components/About/index.tsx'
 function App() {
 
   return (
-    <div className='lg:mx-12'>
+    <div className='lg:mx-12 font-geist-mono'>
       <Header {...data.header} />
       <Gallery {...data.gallery} />
       <About {...data.about} />

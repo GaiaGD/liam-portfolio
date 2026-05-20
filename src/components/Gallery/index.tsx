@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import Picture from "../Picture";
 
 export default function Gallery ( props: any) {
-    const { title, pictures } = props
+    const { pictures } = props
     const [open, setOpen] = useState(false);
-    const [modalIndex, setModalIndex] = useState(0)
+    const [modalIndex, setModalIndex] = useState(-1)
 
     useEffect(() => {
         if (open) {
@@ -32,42 +32,43 @@ export default function Gallery ( props: any) {
 
     const goToPrevPicture = () => {
         setModalIndex((prevModalIndex) => {
-            if (prevModalIndex > pictures.length - 1) {
+            if (modalIndex > 0) {
               return prevModalIndex - 1; // Move to next picture
             }
             setOpen(false)
-            return 0; // Loop back to the first picture
+            return -1; // Loop back to the first picture
           });
     }
 
     const goToNextPicture = () => {
+        console.log('next')
         setModalIndex((prevModalIndex) => {
             if (prevModalIndex < pictures.length - 1) {
               return prevModalIndex + 1; // Move to next picture
             }
             setOpen(false)
-            return 0; // Loop back to the first picture
+            return -1; // Loop back to the first picture
           });
     }
 
     const pictureRef = useRef(null);
 
     // when clicked outside picture
-    useEffect(() => {
-        const handleClickOutside = (event: Event) => {
-          if (pictureRef.current && !pictureRef.current.contains(event.target)) {
-            onCloseModal(); // Close modal if click is outside
-          }
-        };
+    // useEffect(() => {
+    //     const handleClickOutside = (event: Event) => {
+    //       if (pictureRef.current && !pictureRef.current.contains(event.target)) {
+    //         onCloseModal(); // Close modal if click is outside
+    //       }
+    //     };
     
-        // Add event listener on mount
-        document.addEventListener("mousedown", handleClickOutside);
+    //     // Add event listener on mount
+    //     document.addEventListener("mousedown", handleClickOutside);
     
-        // Clean up the event listener on unmount
-        return () => {
-          document.removeEventListener("mousedown", handleClickOutside);
-        };
-      }, [onCloseModal]); // Adding onCloseModal as a dependency
+    //     // Clean up the event listener on unmount
+    //     return () => {
+    //       document.removeEventListener("mousedown", handleClickOutside);
+    //     };
+    //   }, [onCloseModal]); // Adding onCloseModal as a dependency
 
     return (
     <>
@@ -100,15 +101,17 @@ export default function Gallery ( props: any) {
         </motion.div>
 
         <div style={{ display: open ? "grid" : "none" }} className="fixed inset-0 place-items-center bg-black bg-opacity-90">
-            <img ref={pictureRef} src={pictures[modalIndex].url} className="lg:w-2/3 w-5/6 h-auto rounded-lg shadow-lg" />
+            {modalIndex >= 0 && <img ref={pictureRef} src={pictures[modalIndex].url} className="lg:w-2/3 w-5/6 h-auto rounded-lg shadow-lg" />}
+            <div onClick={goToPrevPicture} className="absolute h-screen flex items-center justify-start left-0 w-1/2 p-2 md:p-6 cursor-pointer">
+                <MdArrowBackIos />
+            </div>
+            <div onClick={goToNextPicture} className="absolute h-screen flex items-center justify-end right-0 w-1/2 p-2 md:p-6 cursor-pointer transform">
+                <div className="rotate-180">
+                    <MdArrowBackIos/>
+                </div>
+            </div>
             <div className="absolute top-0 right-0 p-6 cursor-pointer">
                 <IoCloseSharp onClick={onCloseModal} />
-            </div>
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 md:p-6 cursor-pointer">
-                <MdArrowBackIos onClick={goToPrevPicture} />
-            </div>
-            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 rotate-180 p-2 md:p-6 cursor-pointer">
-                <MdArrowBackIos onClick={goToNextPicture} />
             </div>
         </div>
 

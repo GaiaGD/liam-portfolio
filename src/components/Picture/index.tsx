@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import { IoCloseSharp } from "react-icons/io5";
-
 export default function Picture (props: any){
     const {index, picture, onOpenModal} = props
 
