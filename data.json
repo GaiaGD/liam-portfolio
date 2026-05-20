@@ -1,27 +1,76 @@
 {
   "header": {
     "title": "Liam Nunes",
-    "subheader": "Photojournalist"
+    "subheader": "Photojournalist",
+    "phone": "+413 658 7036",
+    "email": "liam.nunes@aol.com"
   },
   "gallery": {
     "title": "Liam Nunes",
-    "tiles": [
+    "pictures": [
       {
-        "url": "./src/assets/img/first.jpg",
+        "url": "/LiamNunes-Gallery-1.jpg",
         "title": "First Photo"
       },
       {
-        "url": "./src/assets/img/second.jpg",
+        "url": "/LiamNunes-Gallery-2.jpg",
         "title": "Second Photo"
       },
       {
-        "url": "./src/assets/img/third.jpg",
+        "url": "/LiamNunes-Gallery-3.jpg",
         "title": "Third Photo"
       },
       {
-        "url": "./src/assets/img/fourth.jpg",
+        "url": "/LiamNunes-Gallery-4.jpg",
         "title": "Fourth Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-5.jpg",
+        "title": "First Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-6.jpg",
+        "title": "Second Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-7.jpg",
+        "title": "Third Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-8.jpg",
+        "title": "Fourth Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-9.jpg",
+        "title": "First Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-10.jpg",
+        "title": "Second Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-12.jpg",
+        "title": "Third Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-13.jpg",
+        "title": "Fourth Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-14.jpg",
+        "title": "First Photo"
+      },
+      {
+        "url": "/LiamNunes-Gallery-15.jpg",
+        "title": "Second Photo"
       }
     ]
+  },
+  "about": {
+    "intro": "By Liam Nunes",
+    "img": {
+      "title": "Liam Nunes",
+      "url": "/LiamNunes-bio.jpg"
+    }
   }
 }
