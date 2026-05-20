@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 
+interface FooterLink {
+  url: string;
+  label: string;
+}
+
 interface WorkItem {
   org: string;
   channelUrl: string;
@@ -7,7 +12,7 @@ interface WorkItem {
   role: string;
   location: string;
   period: string;
-  footerLink?: { url: string; label: string };
+  footerLinks?: FooterLink[];
 }
 
 export default function Work({ items }: { items: WorkItem[] }) {
@@ -34,16 +39,17 @@ export default function Work({ items }: { items: WorkItem[] }) {
               <p className="text-sm font-light opacity-50 mt-2">{item.role}</p>
               <p className="text-sm font-light opacity-50">{item.location}</p>
               <p className="text-sm font-light opacity-50">{item.period}</p>
-              {item.footerLink && (
+              {item.footerLinks && item.footerLinks.map((link: FooterLink, linkIndex) => (
                 <a
-                  href={item.footerLink.url}
+                  key={linkIndex}
+                  href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-sm font-light opacity-100 hover:opacity-40 transition-opacity mt-3"
                 >
-                  {item.footerLink.label} ↗
+                  {link.label} ↗
                 </a>
-              )}
+              ))}
             </div>
             <div className="w-full lg:w-2/3 aspect-video">
               <iframe
